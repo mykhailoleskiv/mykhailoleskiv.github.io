@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  <style>
+    #map { height: 98vh; width: 80%; float: left; }
+    #routes { overflow-y: scroll; max-height: 49vh; }
+    .sidebar { float: left; width: 20%; }
+    .route {
+      display: inline-block;
+      border: 1px solid #ccc;
+      background-color: #e9e9ed;
+      color: #333;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div>
+    <div>
+      <span>Відстань: </span><span id="distance"></span>
+    </div>
+    <div class="sidebar">
+      <button class="route" onclick="toggleParagraph('routes')">
+        Тур де Сокаль
+      </button>
+    </div>
+    <div id="routes" class="sidebar" hidden></div>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="index.js"></script>
