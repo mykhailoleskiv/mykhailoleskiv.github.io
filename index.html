@@ -11,7 +11,12 @@
      crossorigin=""></script>
   <style>
     #map { height: 98vh; width: 80%; float: left; }
-    .sidebar { float: left; width: 20%; overflow-y: scroll; max-height: 49vh; }
+    .sidebar {
+      float: left;
+      width: 20%;
+      overflow-y: scroll;
+      max-height: 49vh;
+    }
     .route {
       display: inline-block;
       border: 1px solid #ccc;
@@ -19,6 +24,7 @@
       color: #333;
       padding: 10px 20px;
       font-size: 16px;
+      font-weight: 700;
       text-align: center;
       text-decoration: none;
       cursor: pointer;
@@ -39,12 +45,27 @@
       </button>
     </div>
     <div id="tourDeSokal" class="sidebar" hidden></div>
+
     <div class="sidebar">
       <button class="route" onclick="toggleParagraph('hikings')">
         Походи
       </button>
     </div>
     <div id="hikings" class="sidebar" hidden></div>
+
+<!--    <div class="sidebar">-->
+<!--      <button class="route" onclick="toggleParagraph('walks')">-->
+<!--        Піші прогулянки-->
+<!--      </button>-->
+<!--    </div>-->
+<!--    <div id="walks" class="sidebar" hidden></div>-->
+
+<!--    <div class="sidebar">-->
+<!--      <button class="route" onclick="toggleParagraph('bikeWalks')">-->
+<!--        Велопрогулянки-->
+<!--      </button>-->
+<!--    </div>-->
+<!--    <div id="bikeWalks" class="sidebar" hidden></div>-->
   </div>
 </body>
 </html>
